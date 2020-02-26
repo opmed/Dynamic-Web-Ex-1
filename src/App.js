@@ -1,7 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import "./App.css";
-
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 import ArticleListing from "./Pages/ArticleListing";
 import Article from "./Pages/Article";
@@ -16,7 +15,7 @@ function App() {
 		       <Article/>
 		     </Route>
 
-		     <Route path="/ArticleListing/:id">
+		     <Route path="/">
 		        <ArticleListing/>
 		     </Route>
 

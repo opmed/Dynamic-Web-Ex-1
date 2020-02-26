@@ -14,26 +14,26 @@ function Article() {
 
 
   return (
-  <div>
-    <header
-      className="articleheader"
-      style = {{
-        backgrounndImage: `url(${article.image ? article.image.url: ""})`
-      }}>
+    <div>
+      <header
+        className="articleheader"
+        style = {{
+          backgrounndImage: `url(${article.image ? article.image.url: ""})`
+        }}>
 
-      <div className="articleHeaderWrapper">
-           <h1>{article.title}</h1>
-           <p>(article.publishDate)</p>
-           <p>(article.blurb)</p>
-      </div>
-    </header>
-    <main className="articleContent">
-       <div className="articleContentWrapper">
-          {article.articleText && article.articleText.map((text, i) => (
-            <p key={i}>{text.data}</p>
-          ))}
-       </div>
-    </main>
+        <div className="articleHeaderWrapper">
+             <h1>{article.title}</h1>
+             <p>(article.publishDate)</p>
+             <p>(article.blurb)</p>
+        </div>
+      </header>
+      <main className="articleContent">
+         <div className="articleContentWrapper">
+            {article.articleText && article.articleText.map((text, i) => (
+              <p key={i}>{text.data}</p>
+            ))}
+         </div>
+      </main>
   </div>
   )
 }

@@ -3,21 +3,22 @@ import React from "react";
 import ArticleCard from "../Component/ArticleCard";
 /*import Article from "./src/Pages/Article";*/
 
-
-
 import Data from "../Component/Data";
 
 
 function ArticleListing() {
-console.log('data', Data)
 return (
-	<div>
+	<div className="ArticleListing">
 
 	   <header>
-         <h1>Article</h1>
+         <h1>Articles</h1>
 	   </header>
 	   
-
+       <main>
+		   {Data.map((article, i) => (
+	        	<ArticleCard key={i} articleData={article} />
+	        ))}
+	   </main>
 
 
 	</div>
