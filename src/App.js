@@ -9,19 +9,19 @@ import Article from "./Pages/Article";
 
 function App() {
 	return (
-	<Router>
-	  <Switch>
+		<Router>
+		  <Switch>
 
-	     <Route path="/article/:id">
-	       <Article/>
-	     </Route>
+		     <Route path="/article/:id">
+		       <Article/>
+		     </Route>
 
-	     <Route path="/ArticleListing/:id">
-	        <ArticleListing/>
-	     </Route>
+		     <Route path="/ArticleListing/:id">
+		        <ArticleListing/>
+		     </Route>
 
-	  </Switch>
-	</Router>
+		  </Switch>
+		</Router>
 	);
 }
 

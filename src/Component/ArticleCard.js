@@ -1,5 +1,4 @@
 import React from 'react';
-import ArticleData from "../Component/Data"
 
 function ArticleCard({articleData}) {
 	return (
@@ -11,7 +10,7 @@ function ArticleCard({articleData}) {
     </div>
 
       <div className="articleCard_text">
-       <h2>{ArticleData.title}</h2>
+       <h2>{articleData.title}</h2>
        <p>date</p>
        <p>{articleData.blurb}</p>
        <a href="">Read More</a>
