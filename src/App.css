@@ -1,4 +1,15 @@
-.articleCard {
+.ArticleListing header{
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.ArticleListing header h1{
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.ArticleCard {
   border: 1px solid black;
   /*flexbox*/
   display: flex;
@@ -10,45 +21,46 @@
   width: 100%;
 }
 
-.articleCard_image {
+.ArticleCard_image {
   flex-basis: 30%;
 }
 
-.articleCard_image img{
+.ArticleCard_image img{
   height: auto;
-  width: 100px;
+  width: 100%;
 }
 
-.articleCard_text {
+.ArticleCard_text {
   flex-basis: 70%;
   padding-left: 20px;
 }
 
-.articleHeader {
+.ArticleHeader {
   background-position: center;
   background-size: cover;
   padding: 100px 25px;
 }
 
-.articleHeaderWrapper {
+.ArticleHeaderWrapper {
   margin: 0 auto;
   max-width: 1080;
   width: 100%;
 }
 
-.articleConntent {
+.ArticleContent {
   padding: 30px 25px;
 }
 
-.articleContentWrapper {
+.ArticleContentWrapper {
   margin: 0 auto;
   max-width: 640px;
 }
 
-.articleContent p {
+.ArticleContent p {
   font-size: 16px;
   
 }
+
 
 
 

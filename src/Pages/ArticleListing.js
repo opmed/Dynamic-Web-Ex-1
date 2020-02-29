@@ -16,11 +16,9 @@ return (
 	   
        <main>
 		   {Data.map((article, i) => (
-	        	<ArticleCard key={i} articleData={article} />
+	        	<ArticleCard key={i} article={article} />
 	        ))}
 	   </main>
-
-
 	</div>
  )
 }

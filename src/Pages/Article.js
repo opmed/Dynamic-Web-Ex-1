@@ -1,7 +1,8 @@
 import React, {useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-
 import DATA from "../Component/Data";
+import ArticleItem from "../Component/ArticleItem";
+
 
 function Article() {
   const [article, setArticle] = useState({});
@@ -13,22 +14,20 @@ function Article() {
   }, [id]);
 
 
-  return (
+  return(
     <div>
-      <header
-        className="articleheader"
-        style = {{
-          backgrounndImage: `url(${article.image ? article.image.url: ""})`
-        }}>
+      <header className="ArticleHeader"
+        style = {{backgroundImage: `url(${article.image ? article.image.url: ""})`}}>
 
-        <div className="articleHeaderWrapper">
+        <div className="ArticleHeaderWrapper">
              <h1>{article.title}</h1>
              <p>(article.publishDate)</p>
              <p>(article.blurb)</p>
         </div>
       </header>
-      <main className="articleContent">
-         <div className="articleContentWrapper">
+
+      <main className="ArticleContent">
+         <div className="ArticleContentWrapper">
             {article.articleText && article.articleText.map((text, i) => (
               <p key={i}>{text.data}</p>
             ))}

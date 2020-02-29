@@ -1,19 +1,19 @@
 import React from 'react';
+import ArticleData from "../Component/Data";
 
-function ArticleCard({articleData}) {
+function ArticleCard({article}) {
 	return (
-	
 	<article className="ArticleCard">
 
-	  <div className="articleCard_image">
-        <img src={articleData.image.url} alt={articleData.image.alt} />
+	  <div className="ArticleCard_image">
+        <img src={article.image.url} alt={article.image.alt}/>
     </div>
 
-      <div className="articleCard_text">
-       <h2>{articleData.title}</h2>
+      <div className="ArticleCard_text">
+       <h2>{article.title}</h2>
        <p>date</p>
-       <p>{articleData.blurb}</p>
-       <a href="">Read More</a>
+       <p>{article.blurb}</p>
+       <a href={'article/${article.id}'}>Read More</a>
       </div>
 
   </article>
